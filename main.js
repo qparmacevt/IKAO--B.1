@@ -1,7 +1,7 @@
 function callsign(n) {
 
     let call = document.getElementById('input').value;
-
+    call  = call.toUpperCase();
     let alfabet = {
         A: 'Alfa',
         B: 'Bravo',
@@ -29,32 +29,6 @@ function callsign(n) {
         X: 'Xray',
         Y: 'Yankee',
         Z: 'Zulu',
-        a: 'Alfa',
-        b: 'Bravo',
-        c: 'Charlie',
-        d: 'Delta',
-        e: 'Echo',
-        f: 'Foxtrot',
-        g: 'Golf',
-        h: 'Hotel',
-        i: 'India',
-        j: 'Juliet',
-        k: 'Kilo',
-        l: 'Lima',
-        m: 'Mike',
-        n: 'November',
-        o: 'Oscar',
-        p: 'Papa',
-        q: 'Quebec',
-        r: 'Romeo',
-        s: 'Siera',
-        t: 'Tango',
-        u: 'Uniform',
-        v: 'Victor',
-        w: 'Whiskey',
-        x: 'Xray',
-        y: 'Yankee',
-        z: 'Zulu',
         '1': "One",
         '2': 'Two',
         '3': 'Three',
@@ -80,7 +54,7 @@ function callsign(n) {
             let a = (alfabet[splited[i]]);
             console.log(typeof(a));
             console.log(a);
-            document.getElementById("output").innerHTML = `${a}`;
+            document.getElementById("output").innerHTML += `${a} <br>`;
         }
         
     }
